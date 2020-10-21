@@ -1,0 +1,102 @@
+@import './components/variables.scss';
+
+@import './../libs/materialize/sass/materialize.scss';
+@import './../libs/materialize-social/materialize-social.css';
+@import './components/fonts.scss';
+
+
+@import './components/main-company.scss';
+
+
+// --------------- VARIABLES COLORES ---------------
+@function convertColorToRGB($color){
+    $red: red($color);
+    $green: green($color);
+    $blue: blue($color);
+    @return RGB($red,$green,$blue);
+};
+:root{
+    --primary-color : #{convertColorToRGB($primary-color)};
+    --primary-color-dark : #{convertColorToRGB($primary-color-dark)};
+    --primary-color-light : #{convertColorToRGB($primary-color-light)};
+    --secondary-color : #{convertColorToRGB($secondary-color)};
+    --secondary-color-dark : #{convertColorToRGB($secondary-color-dark)};
+    --secondary-color-light : #{convertColorToRGB($secondary-color-light)};
+    --tertiary-color : #{convertColorToRGB($tertiary-color)};
+    --tertiary-color-dark : #{convertColorToRGB($tertiary-color-dark)};
+    --tertiary-color-light : #{convertColorToRGB($tertiary-color-light)};
+}
+
+.primary{
+    background-color: var(--primary-color);
+    &-text{ color: var(--primary-color); }
+    &-dark{ background-color: var(--primary-color-dark); }
+    &-light{ background-color: var(--primary-color-light); }
+}
+
+.secondary{
+    &-text{
+        color: var(--secondary-color);
+        &.hover:hover{ color: var(--secondary-color-light); }
+        &.hover:active{ color: var(--secondary-color-dark); }
+    }
+    background-color: var(--secondary-color);
+    &-dark{ background-color: var(--secondary-color-dark); }
+    &-light{ background-color: var(--secondary-color-light); }
+}
+
+.tertiary{
+    &-text{ color: var(--tertiary-color) };
+    background-color: var(--tertiary-color);
+    &-dark{ background-color: var(--tertiary-color-dark); }
+    &-light{ background-color: var(--tertiary-color-light); }
+}
+.hover{
+    &:hover{ filter: brightness(75%); }
+    &-primary:hover{ color: var(--primary-color) !important; }
+    &-secondary:hover{ color: var(--secondary-color) !important; }
+    &-tertiary:hover{ color: var(--tertiary-color) !important; }
+}
+
+.flex{ display: flex !important; }
+.flex-1{ display: flex; flex: 1; min-height: 0; }
+.flex-column{ display: flex; flex-direction: column; }
+
+.flex-center{ display: flex; justify-content: center; }
+.flex-v-center{ display: flex; align-items: center; }
+
+.flex-space{
+    &-btw{ display: flex; justify-content: space-between; }
+}
+
+.margin{
+    &-v{
+        &-10{ margin-top: 10px; margin-bottom: 10px; }
+        &-20{ margin-top: 20px; margin-bottom: 20px; }
+    }
+    &-t{
+        &-10{ margin-top: 10px; }
+    }
+    &-20{ margin: 20px; }
+    &-10{ margin: 10px; }
+    &-0{ margin: 0; }
+}
+.padding{
+    &-0{ padding: 0; }
+    &-h{
+        &-10{ padding-left: 10px; padding-right: 10px; }
+        &-20{ padding-left: 20px; padding-right: 20px; }
+    }
+}
+.border{
+    &-radius{ border-radius: 8px; }
+    &-rb-0{ border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
+}
+
+.bold{ font-weight: bold; }
+.center{ text-align: center; }
+
+.btn-block{ width: 100%; }
+.btn-circle{ border-radius: 25px; }
+
+.relative{ position: relative; }

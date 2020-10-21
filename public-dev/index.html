@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="torneamentumchess">
+    <head>
+        <!-- Base -->
+        <title ng-bind="title"></title>
+        <base href="/"/>
+
+        <!-- Meta -->
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!-- Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="./styles/main.css"/>
+    </head>
+    <body>
+
+        <ui-view class="flex flex-column"></ui-view>
+
+
+        <!-- Libs -->
+        <script src="./libs/jquery/dist/jquery.js"></script>
+        <script src="./libs/angular/angular.js"></script>
+        <script src="./libs/angular-sanitize/angular-sanitize.js"></script>
+        <script src="./libs/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="./libs/materialize/dist/js/materialize.js"></script>
+        <script src="./scripts/angular-materialize.js"></script>
+        <script src="./libs/oclazyload/dist/ocLazyLoad.js"></script>
+        <script src="./libs/moment/moment.js"></script>
+        <script src="./libs/underscore/underscore.js"></script>
+
+        <script src="./libs/angular-translate/angular-translate.js"></script>
+        <script src="./scripts/angular-translate-loader-partial.js"></script>
+
+        <!-- Modules -->
+        <script src="./modules/Core/modules/User/modules/Auth/core.user.auth.module.js"></script>
+        <script src="./modules/Core/modules/User/core.user.module.js"></script>
+        <script src="./modules/Core/core.module.js"></script>
+
+        <!-- JS Main -->
+        <script src="./application.js"></script>
+    </body>
+</html>

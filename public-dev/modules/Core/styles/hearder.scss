@@ -1,0 +1,31 @@
+@import './components/header/sidenav.scss';
+
+header{
+    > nav{
+        &:not(.navbar-fixed){ position: relative; }
+
+        > a{
+            &.sidenav-trigger{ margin: 0; }
+            &.brand-logo > img{ padding: 5px; height: 100%; }
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    + section{ overflow: auto; }
+}
+
+
+
+
+@media (max-width: 600px) {
+    header > nav a {
+        height: 56px; min-width: 56px;
+        > i{ margin: 0 !important; }
+    }
+}
+@media (min-width: 600px) {
+    header > nav a { height: 64px; min-width: 64px; padding: 0 20px; }
+}
+
+

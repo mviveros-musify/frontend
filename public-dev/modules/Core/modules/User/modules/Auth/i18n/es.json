@@ -1,0 +1,17 @@
+{
+    "core.user.auth" : {
+        "username"         : "Usuario",
+        "email"            : "Correo Electronico",
+        "password"         : "Contraseña",
+        "confirm-password" : "Confirmar Contraseña",
+
+        "forgot"        : "¿Olvidaste tu Contraseña?",
+        "registerMsg"   : "¿Eres nuevo?",
+        "register"      : "Regístrate",
+        "remember"      : "Recuerdame",
+        "or-connect"    : "O",
+        "help"          : "Ayuda",
+        "termPrivacity" : "Terminos y Privacidad",
+        "copyright"     : "mviveros.me"
+    }
+}

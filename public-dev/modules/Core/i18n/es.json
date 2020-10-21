@@ -1,0 +1,7 @@
+{
+    "core": {},
+    "btn": {
+        "login"    : "Ingresar",
+        "register" : "Registrarme"
+    }
+}

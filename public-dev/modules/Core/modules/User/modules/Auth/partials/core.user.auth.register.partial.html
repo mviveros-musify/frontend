@@ -1,0 +1,30 @@
+<form name="RegisterForm" class="flex-column col s12" novalidate>
+    <progress-loader ng-if="false"></progress-loader>
+    <div class="row margin-0">
+        <div class="input-field col l12">
+            <i class="material-icons prefix">person</i>
+            <input type="text" id="username" class="material-input validate" character-counter data-length="150" required>
+            <label for="username" class="character-counter">{{ 'core.user.auth.username' | translate }}</label>
+            <span class="helper-text" data-error="tenes problemas mi rey"></span>
+        </div>
+        <div class="input-field col l12">
+            <i class="material-icons prefix">mail</i>
+            <input type="email" id="email" class="material-input validate"  required>
+            <label for="email" class="character-counter">{{ 'core.user.auth.email' | translate }}</label>
+            <span class="helper-text" data-error="tenes problemas mi rey"></span>
+        </div>
+        <div class="input-field col l12">
+            <i class="material-icons prefix">lock</i>
+            <input type="password" id="password" class="material-input validate" character-counter data-length="150"  required>
+            <label for="password" class="character-counter">{{ 'core.user.auth.password' | translate }}</label>
+            <span class="helper-text" data-error="tenes problemas mi rey"></span>
+        </div>
+        <div class="input-field col l12">
+            <i class="material-icons prefix">lock</i>
+            <input type="password" id="confirm-password" class="material-input validate" character-counter data-length="150"  required>
+            <label for="confirm-password" class="character-counter">{{ 'core.user.auth.confirm-password' | translate }}</label>
+            <span class="helper-text" data-error="tenes problemas mi rey"></span>
+        </div>
+        <button class="auth-submit btn waves-effect waves-light" type="submit" name="action">{{ 'btn.register' | translate }}</button>
+    </div>
+</form>

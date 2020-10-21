@@ -1,0 +1,7 @@
+.vscode
+node_modules
+node_modules
+public-dist
+public-dev/libs
+public-dev/styles/*.css
+public-dev/modules/**/styles/*.css

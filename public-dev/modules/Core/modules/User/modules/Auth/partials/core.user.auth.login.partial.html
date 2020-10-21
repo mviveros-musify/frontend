@@ -1,0 +1,40 @@
+<form name="LoginForm" class="flex-column col s12" novalidate>
+    <progress-loader ng-if="false"></progress-loader>
+    <div class="row margin-0">
+        <div class="input-field col l12">
+            <i class="material-icons prefix">person</i>
+            <input type="text" id="username" class="material-input validate" required>
+            <label for="username" class="character-counter">{{ 'core.user.auth.username' | translate }}</label>
+            <span class="helper-text" data-error="tenes problemas mi rey"></span>
+        </div>
+        <div class="input-field col l12">
+            <i class="material-icons prefix" for="password">lock</i>
+            <input type="password" id="password" class="validate" required>
+            <label for="password">{{ 'core.user.auth.password' | translate }}</label>
+            <span class="helper-text" data-error="tenes problemas mi rey"></span>
+            
+        </div>
+        <div class="auth-options col l12">
+            <div class="switch center">
+                <label>
+                    <input type="checkbox" tabindex="-1">
+                    <span class="lever"></span>
+                    <span class="hover" style="font-size: 1rem;">{{ 'core.user.auth.remember' | translate }}</span>
+                </label>
+            </div>
+            <div class="center">
+                <a href="/forgot" class="grey-text hover" tabindex="-1">{{ 'core.user.auth.forgot' | translate }}</a>
+            </div>
+        </div>
+        <button class="auth-submit btn waves-effect waves-light" type="submit" name="action">{{ 'btn.login' | translate }}</button>
+        <div class="divider" text="{{ 'core.user.auth.or-connect' | translate }}"></div>
+        <div class="auth-social margin-t-10">
+            <button class="btn btn-floating social google waves-effect waves-light"><i class="icon-social-google"></i></button>
+            <button class="btn btn-floating social facebook waves-effect waves-light"><i class="icon-social-facebook"></i></button>
+            <button class="btn btn-floating social twitter waves-effect waves-light"><i class="icon-social-twitter"></i></button>
+        </div>
+    </div>
+</form>
+<div class="auth-register grey lighten-2">
+    <p class="center">{{ 'core.user.auth.registerMsg' | translate }} <a href="/register" class="secondary-text hover bold">{{ 'core.user.auth.register' | translate }}</a></p>
+</div>

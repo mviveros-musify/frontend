@@ -1,0 +1,24 @@
+{
+  "name": "musify-frontend",
+  "description": "Musify - Frontend. Proyecto de Angular. Similar a Spotify de Victor Robles (Curso Udemy).",
+  "authors": [
+    "Mauro Daniel Viveros (TRY Ubbe)"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.9",
+    "jquery": "^3.5.0",
+    "materialize": "^1.0.0",
+    "oclazyload": "^1.1.0",
+    "underscore": "^1.10.2",
+    "moment": "^2.26.0",
+    "sweetalert": "^2.1.2",
+    "materialize-social": "^1.0.3",
+    "angular-materialize": "^0.2.2",
+    "angular-translate": "^2.18.3",
+    "angular-translate-loader-partial": "^2.18.3",
+    "angular-translate-loader-static-files": "^2.18.3",
+    "angular-sanitize": "^1.8.0",
+    "angular-ui-router": "^1.0.28"
+  }
+}
